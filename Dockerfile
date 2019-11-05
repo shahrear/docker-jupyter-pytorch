@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:latest
+FROM nvcr.io/nvidia/pytorch:19.10-py3 
 
 RUN /opt/conda/bin/conda install -y nodejs Cython tensorflow pandas scikit-learn matplotlib seaborn jupyter jupyterlab && \
     /opt/conda/bin/conda install -c conda-forge tensorboardx && \
